@@ -1,0 +1,10 @@
+random_seed: 42
+simulation_duration_ms: 60000
+arrival_rate_per_second: 8
+gpu_workers: 2
+cpu_workers: 4
+default_gpu_runtime_ms: 180
+default_cpu_runtime_ms: 420
+drop_after_wait_ms: 2500
+cost_per_gpu_ms: 0.00002
+cost_per_cpu_ms: 0.000005

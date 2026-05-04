@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sage-sim"
+version = "0.1.0"
+description = "GPU/CPU inference scheduling simulator for portfolio experiments."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "simpy",
+  "pandas",
+  "matplotlib",
+  "pydantic",
+  "pyyaml",
+]
+
+[project.scripts]
+sage-sim = "sage_sim.cli:main"
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "ruff",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

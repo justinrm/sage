@@ -1,0 +1,31 @@
+# Virtual environments
+.venv/
+
+# Python cache and bytecode
+__pycache__/
+*.pyc
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Local environment
+.env
+.DS_Store
+.cursor/
+.cursor/*
+
+# Generated reports (keep directory via .gitkeep)
+reports/*.png
+reports/*.csv
+reports/*.json

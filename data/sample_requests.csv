@@ -1,0 +1,11 @@
+request_id,tenant_id,model_name,arrival_time_ms,estimated_runtime_ms,estimated_tokens,priority,deadline_ms,requires_gpu
+r-0001,tenant-a,llm-small,0,120,256,2,2000,true
+r-0002,tenant-b,embedder-v1,50,60,64,1,,false
+r-0003,tenant-a,llm-small,110,300,512,3,1800,true
+r-0004,tenant-c,classifier-v2,140,90,96,2,,false
+r-0005,tenant-b,llm-large,210,480,1024,5,2200,true
+r-0006,tenant-c,embedder-v1,260,70,80,1,,false
+r-0007,tenant-a,llm-small,320,140,300,2,1900,true
+r-0008,tenant-d,reranker-v1,410,110,220,4,1700,false
+r-0009,tenant-b,llm-large,470,520,1200,5,2000,true
+r-0010,tenant-d,classifier-v2,530,85,90,1,,false

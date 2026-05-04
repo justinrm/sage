@@ -1,0 +1,11 @@
+random_seed: 99
+simulation_duration_ms: 2000
+arrival_rate_per_second: 0
+gpu_workers: 1
+cpu_workers: 1
+default_gpu_runtime_ms: 180
+default_cpu_runtime_ms: 120
+drop_after_wait_ms: 800
+cost_per_gpu_ms: 0.00002
+cost_per_cpu_ms: 0.000005
+scheduler: fifo
